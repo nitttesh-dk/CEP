@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="customPopup" class="popup">
+        <div class="popup-content">
+            <span id="popupMessage"></span>
+            <button id="closePopup">OK</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>Queue Visualization</h1>
+        
+        <div class="controls">
+            <input type="number" id="queueSize" placeholder="Enter Queue Size" min="1" max="25" />
+
+            <button id="createQueue">Create Queue</button>
+        </div>
+        
+        <div class="queue-controls">
+            <input type="number" maxlength="4" id="enqueueValue" placeholder="Enter Value" />
+            <button id="enqueueButton">Enqueue</button>
+            <button id="dequeueButton">Dequeue</button>
+        </div>
+        
+        <div class="queue-visual">
+            <div id="queueContainer" class="queue-container">
+               
+            </div>
+        </div>
+        
+        <div class="pointers">
+            <p>Front: <span id="frontPointer">-1</span></p>
+            <p>Rear: <span id="rearPointer">-1</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

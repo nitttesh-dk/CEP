@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="customPopup" class="popup">
+        <div class="popup-content">
+            <span id="popupMessage"></span>
+            <button id="closePopup">OK</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>Array Visualization</h1>
+        
+        <div class="controls">
+            <input type="number" id="arraySize" placeholder="Enter Array Size" min="1" max="20" />
+            <button id="createArray">Create Array</button>
+        </div>
+        
+        <div class="array-controls">
+            <input type="number" id="value" placeholder="Enter Value" />
+            <input type="number" id="position" placeholder="Position (0-indexed)" />
+            <button id="pushButton">Push</button>
+            <button id="popButton">Pop</button>
+            <button id="insertButton">Insert at Position</button>
+            <button id="deleteButton">Delete at Position</button>
+        </div>
+        
+        <div class="array-visual">
+            <div id="arrayContainer" class="array-container"></div>
+        </div>
+        
+        <div class="pointers">
+            <p>Size: <span id="arraySizeDisplay">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
